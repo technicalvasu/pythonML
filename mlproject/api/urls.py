@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
+from .views import PredictionAPI
 
 urlpatterns=[
-    path('',views.getData)
+    path('predict',PredictionAPI.as_view(),name='predict')
 ]

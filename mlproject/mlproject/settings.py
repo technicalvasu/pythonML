@@ -124,5 +124,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRONJOBS=[
-    ('*/5 * * * *', 'mlproject.cron.call_external_service')
+    ('* * * * *', 'mlproject.cron.call_external_service')
 ]
